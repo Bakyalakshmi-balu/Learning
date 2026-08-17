@@ -10,3 +10,5 @@ Get-Service ssh-agent ```
 
 # add key to ssh agent 
 ``` ssh-add C:/Users/Madhumithabalu/.ssh/id_ed25519```
+
+# Git Commant
