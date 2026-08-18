@@ -5,19 +5,31 @@ namespace MyApp{
 {
     public static void Main(string[] args)
     {
-        Payment paymentMethod = new UPIPayment();
-        paymentMethod.pay(100);
-        paymentMethod.refund(20);
-        Console.WriteLine ("Start small. Ship something.");
-        ///encapsultion
-        BankAccount account = new BankAccount();
-        account.deposite(1000);
-        account.withdrawal(500);
-        double balance = account.getbalance();
-        Console.WriteLine("My Balance is " + balance);
+        // Payment paymentMethod = new UPIPayment();
+        // paymentMethod.pay(100);
+        // paymentMethod.refund(20);
+        // Console.WriteLine ("Start small. Ship something.");
+        // ///encapsultion
+        // BankAccount account = new BankAccount();
+        // account.deposite(1000);
+        // account.withdrawal(500);
+        // double balance = account.getbalance();
+        // Console.WriteLine("My Balance is " + balance);
         // account.balance=account.balance-500;
-        // Console.WriteLine("My Balance is " + account.balance);
+        // Shape shape = new Shape();
+        // double squareArea = shape.Area(5);
 
+        // double rectangleArea = shape.Area(5,10);
+
+        // Console.WriteLine("My Square Area " + squareArea);
+        // Console.WriteLine("My Rectangle Area " + rectangleArea);
+
+
+        NotificationService service = new NotificationService();
+        service.send(new EmailNotification());
+        service.send(new SMSNotification());
+        service.send(new InstagramNotification());
+     
     }
 }
 
