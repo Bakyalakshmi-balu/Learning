@@ -25,11 +25,24 @@ namespace MyApp{
         // Console.WriteLine("My Rectangle Area " + rectangleArea);
 
 
-        NotificationService service = new NotificationService();
-        service.send(new EmailNotification());
-        service.send(new SMSNotification());
-        service.send(new InstagramNotification());
-     
+        // NotificationService service = new NotificationService();
+        // service.send(new EmailNotification());
+        // service.send(new SMSNotification());
+        // service.send(new InstagramNotification());
+        
+// created object of Manager class and called the login and manageMeeting methods
+         Manager manager = new Manager(101, "Deepak", 
+        "deepak@example.com", "IT", 1234567890);
+
+        manager.login();
+        manager.manageMeeting();
+
+
+// created object of Developer class and called the login and writeCode methods
+        Developer developer = new Developer(102, "Bakya", "Bakya@gmail.com", "R&D", 980789674);
+        developer.login();
+
+        developer.writeCode();
     }
 }
 
