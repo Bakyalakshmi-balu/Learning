@@ -1,5 +1,6 @@
 namespace MyApp
 {
+    // Base class Employee
     public class Employee
     {
         public int Id{get;set; }
@@ -8,6 +9,7 @@ namespace MyApp
         public string Department{get;set; }
         public int PhoneNo{get;set; }
 
+// Constructor for Employee class
         public Employee(int id, string name, 
         string email, string department, int phone)
         {
@@ -18,14 +20,14 @@ namespace MyApp
             PhoneNo = phone;
         }
 
-
+//  Method to simulate employee login
         public void login()
         {
             Console.WriteLine("Employee has logged in");
         }
     }
 
-
+//  Derived class Developer that inherits from Employee
     public class Developer : Employee
     {
 
@@ -44,9 +46,10 @@ namespace MyApp
             Console.WriteLine("Developer is writing code");
         }
     }
-
+//  Derived class Manager that inherits from Employee
     public class Manager : Employee
     {
+        // Constructor for Manager class
         public Manager(
             int id, 
             string name, 

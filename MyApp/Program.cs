@@ -5,26 +5,38 @@ namespace MyApp{
 {
     public static void Main(string[] args)
     {
+        //abstract class and interface
+        // interface Payment with two methods to be implemented by different payment types
+
         // Payment paymentMethod = new UPIPayment();
         // paymentMethod.pay(100);
         // paymentMethod.refund(20);
         // Console.WriteLine ("Start small. Ship something.");
-        // ///encapsultion
+
+
+        // encapsulation
+        // created object of BankAccount class and called the deposite, withdrawal, and getbalance methods
+
         // BankAccount account = new BankAccount();
         // account.deposite(1000);
         // account.withdrawal(500);
         // double balance = account.getbalance();
         // Console.WriteLine("My Balance is " + balance);
         // account.balance=account.balance-500;
+
+// polymorphism
+        // compile time polymorphism    
+
         // Shape shape = new Shape();
         // double squareArea = shape.Area(5);
 
         // double rectangleArea = shape.Area(5,10);
-
+// runtime polymorphism
         // Console.WriteLine("My Square Area " + squareArea);
         // Console.WriteLine("My Rectangle Area " + rectangleArea);
 
 
+// created object of NotificationService class and called the send method with different notification types
         // NotificationService service = new NotificationService();
         // service.send(new EmailNotification());
         // service.send(new SMSNotification());
