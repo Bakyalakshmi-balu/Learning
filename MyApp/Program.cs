@@ -43,18 +43,24 @@ namespace MyApp{
         // service.send(new InstagramNotification());
         
 // created object of Manager class and called the login and manageMeeting methods
-         Manager manager = new Manager(101, "Deepak", 
-        "deepak@example.com", "IT", 1234567890);
+//          Manager manager = new Manager(101, "Deepak", 
+//         "deepak@example.com", "IT", 1234567890);
 
-        manager.login();
-        manager.manageMeeting();
+//         manager.login();
+//         manager.manageMeeting();
 
 
-// created object of Developer class and called the login and writeCode methods
-        Developer developer = new Developer(102, "Bakya", "Bakya@gmail.com", "R&D", 980789674);
-        developer.login();
+// // created object of Developer class and called the login and writeCode methods
+//         Developer developer = new Developer(102, "Bakya", "Bakya@gmail.com", "R&D", 980789674);
+//         developer.login();
 
-        developer.writeCode();
+//         developer.writeCode();
+
+Pattern pattern = new Pattern();
+pattern.printPattern();
+
+
+
     }
 }
 
